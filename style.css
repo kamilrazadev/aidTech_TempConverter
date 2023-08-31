@@ -27,7 +27,7 @@
 
 h1 {
     position: absolute;
-    top: 80px;
+    top: 50px;
     
     font-weight: 100;
     font-size: 50px;
@@ -38,28 +38,36 @@ h1 {
 
 .temp-input-container {
     display: flex;
+    position: absolute;
+    bottom: 20px;
 
     color: white;
 
-    font-size: 20px;
+    font-size: 50px;
     font-weight: 200;
 
 }
 
 .temp-input-container > div {
-    margin: 10px ;
+    margin: 10px 20px;
 }
 
 .temp-input {
     margin: 10px 0;
     padding: 10px 5px;
+    text-align: center;
 
-    width: 120px;
+    width: 150px;
     height: 100px;
+    font-size: 50px;
+    font-weight: 100;
 
     border-radius: 3px;
     border: none;
     outline: none;
 
     box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.78);
+    background-color: rgba(255, 255, 255, 0.378);
+    backdrop-filter: blur(20px);
+    color: white;
 }
