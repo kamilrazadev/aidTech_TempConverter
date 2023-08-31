@@ -10,26 +10,25 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,400&display=swap" rel="stylesheet">
-    <!-- Title -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">    <!-- Title -->
     <title>Temperature Converter</title>
 </head>
 <body>
-    
-    <div class="container">
-        <h1>TEMPRATURE CONVERTER</h1>
-        <div class="temp-input-container">
-            <div>
-                <input type="number" placeholder="Fahrenheit" oninput="fahrenheitTo(this.value)" id="tempFahrenheit" class="temp-input"> &deg;F
-            </div>
-            <div>
-                <input type="number" placeholder="Celsius" oninput="celsiusTo(this.value)" id="tempCelsius" class="temp-input"> &deg;C
-            </div>
-            <div>
-                <input type="number" placeholder="Kelvin" oninput="kelvinTo(this.value)" id="tempKelvin" class="temp-input"> K
-            </div>
+    <div class="bg-div">
+        <div class="container">
+            <h1>TEMPRATURE CONVERTER</h1>
+            <div class="temp-input-container">
+                <div>
+                    <input type="number" oninput="fahrenheitTo(this.value)" id="tempFahrenheit" class="temp-input"> &deg;F
+                </div>
+                <div>
+                    <input type="number" oninput="celsiusTo(this.value)" id="tempCelsius" class="temp-input"> &deg;C
+                </div>
+                <div>
+                    <input type="number" oninput="kelvinTo(this.value)" id="tempKelvin" class="temp-input"> K
+                </div>
+            </div> 
         </div>
-        
     </div>
     <script src="./app.js"></script>
 </body>
