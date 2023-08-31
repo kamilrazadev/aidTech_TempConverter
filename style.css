@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.temp-input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.temp-input {
+    margin: 10px 0;
+    padding: 10px 5px;
+}

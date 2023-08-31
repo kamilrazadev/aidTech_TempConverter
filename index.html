@@ -5,12 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS Link -->
     <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Title -->
     <title>Temperature Converter</title>
 </head>
 <body>
-    <input type="number" placeholder="Fahrenheit" oninput="fahrenheitTo(this.value)" id="tempFahrenheit">
-    <input type="number" placeholder="Celsius" oninput="celsiusTo(this.value)" id="tempCelsius">
-    <input type="number" placeholder="Kelvin" oninput="kelvinTo(this.value)" id="tempKelvin"> 
+    
+    <div class="temp-input-container">
+        <div>
+            <input type="number" placeholder="Fahrenheit" oninput="fahrenheitTo(this.value)" id="tempFahrenheit" class="temp-input"> &deg;F
+        </div>
+        <div>
+            <input type="number" placeholder="Celsius" oninput="celsiusTo(this.value)" id="tempCelsius" class="temp-input"> &deg;C
+        </div>
+        <div>
+            <input type="number" placeholder="Kelvin" oninput="kelvinTo(this.value)" id="tempKelvin" class="temp-input"> K
+        </div>
+    </div>
+    
     <script src="./app.js"></script>
 </body>
 </html>
