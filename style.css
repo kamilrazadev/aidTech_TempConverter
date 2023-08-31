@@ -42,6 +42,10 @@ h1 {
     
 }
 
+#weather-icon {
+    transition: display 200ms;
+}
+
 .temp-input-container {
     display: flex;
     position: absolute;

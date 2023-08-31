@@ -17,15 +17,16 @@
     <div class="bg-div">
         <div class="container">
             <h1>TEMPRATURE CONVERTER</h1>
+            <img id="weather-icon">
             <div class="temp-input-container">
                 <div>
-                    <input type="number" oninput="fahrenheitTo(this.value)" id="tempFahrenheit" class="temp-input"> &deg;F
+                    <input type="number" oninput="fahrenheitTo(this.value); handleWeatherIcon()" id="tempFahrenheit" class="temp-input"> &deg;F
                 </div>
                 <div>
-                    <input type="number" oninput="celsiusTo(this.value)" id="tempCelsius" class="temp-input"> &deg;C
+                    <input type="number" oninput="celsiusTo(this.value); handleWeatherIcon()" id="tempCelsius" class="temp-input"> &deg;C
                 </div>
                 <div>
-                    <input type="number" oninput="kelvinTo(this.value)" id="tempKelvin" class="temp-input"> K
+                    <input type="number" oninput="kelvinTo(this.value); handleWeatherIcon()" id="tempKelvin" class="temp-input"> K
                 </div>
             </div> 
         </div>
