@@ -9,9 +9,6 @@
     width: 100%;
     height: 100vh;
 
-    /* background: #8A73F2;
-    background: radial-gradient(at center, #1b00948e, #011c7d); */
-
     background-image: url(./assets/bg-main.jpg);
     background-size: 100%;
     background-position: 0 600px;
@@ -81,4 +78,37 @@ h1 {
     background-color: rgba(142, 138, 138, 0.487);
     backdrop-filter: blur(100px);
     color: white;
+}
+@media (max-width: 755px) {
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }    
+    .temp-input {
+        width: 120px;
+        height: 80px;
+    }
+    .temp-input-container > div {
+        font-size: 40px;
+    }
+    .bg-div {
+        background-size: 100% 100%;
+        background-position: 0 525px;
+    }
+}
+
+@media (max-width: 620px) {
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }    
+    .temp-input-container {
+        flex-direction: column;
+    }
+    .temp-input-container > div {
+        font-size: 30px;
+    }
+    .temp-input {
+        width: 200px;
+    }
 }
